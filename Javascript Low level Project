@@ -1,0 +1,79 @@
+Admission Database:
+
+Question Description:-
+Design an application where you can store all student data who are applying for Masai.
+Your application had a Navbar that contains 4 tabs (this is already in the template no need to build).
+Add Students
+Students Database
+Admitted
+Rejected
+Add Students Page : (index.html)
+This page contains a form with 5 input boxes having the following fields (this is already in the template no need to build).
+Name
+Gender (select tag)
+Email
+Mobile Number
+Course (select tag)
+On clicking on form submit (form submit event) you should store students data in your local storage with key "admission"
+    Hint: localStorage.setItem("admission", stringify);
+When you click on either accepted or rejected that row should be deleted from both DOM and localStorage.
+Note : KEY NAMES should be same as mentioned above
+This is how your index.html page should look like
+All Students (students.html)
+This page should display all students data which is stored in your local database( localStorage) with key "admission"
+   Hint: localStorage.getItem("admission");
+Display this data in form of table (thead is already in place just fill in body)
+Each row should have 7 columns
+Name
+Gender
+Email
+Mobile Number
+Course
+Accept
+Reject
+On clicking on Accept, store that particular student data in localStorage with key "admission-accepted"
+  Hint : localStorage.setItem("admission-accepted", stringify)
+Note : KEY NAMES should be same as mentioned above
+
+On clicking on Reject, store that particular student data in localStorage with key "admission-rejected"
+
+  Hint : localStorage.setItem("admission-rejected", stringify)
+When you click on either accepted or rejected that row should be deleted from both DOM and localStorage.
+
+Note : KEY NAMES should be same as mentioned above
+
+You should also have a filter option
+
+filter by course : When clicking on any course you need to filter out all the students corresponding to that course
+Your table should look like
+
+Admitted Page : (admitted.html)
+This page should display all admitted students data which is stored in your local database (local storage)
+Hint : localStorage.getItem("admission-accepted")
+Display this data in form of table (thead is already in place just append to tbody)
+Each row should have 5 columns
+Name
+Email
+Course
+Gender
+Phone
+Your table should look like
+Rejected Page: (rejected.html)
+This page should display all rejected students data which is stored in your local database (local storage)
+Hint : localStorage.getItem("admission-rejected")
+Display this data in form of table (thead is already in place just append to tbody)
+Each row should have 5 columns
+Name
+Email
+Course
+Gender
+Phone
+Your table should look like
+Note:
+Focus more on the functionality of your app. Avoid spending more time in styling. You can do that once you finish the end to end flow of app. All the best!
+
+Demo Video:-
+https://drive.google.com/file/d/1KegyNlcXsIKAP-7UxnkMgEH2pg1Lo68C/view?usp=sharing
+
+What to submit:
+Deployed link (Netlify - Create an account and submit)
